@@ -1,0 +1,72 @@
+<!DOCTYPE HTML>
+<html>
+  <!-- Jake Nocera September 1
+     Introduction to Programming
+     Project 2 - Video game v .02 -->
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta name="author" content="Jake Nocera" />
+    <title>My First Video Game</title>
+
+    <script>
+      var score_north = false;
+      var score_south = false;
+      var score_east = false;
+      var score_west = false;
+      var total_score = 0;
+      function move_north() {
+       alert ("NORTH MESSAGE");
+       if (score_north === false) {
+          total_score = total_score + 5;}
+          score_north=true;
+      }
+      function move_south(){
+        alert("SOUTH MESSAGE")
+         if (score_south === false){
+          total_score = total_score + 5;}
+          score_south=true;
+      }
+      function move_east(){
+        alert("EAST MESSAGE")
+          if (score_east === false){
+          total_score = total_score + 5;}
+          score_east=true;
+      }
+      function move_west(){
+        alert("WEST MESSAGE")
+               if (score_west === false){
+          total_score = total_score + 5;}
+          score_west=true;
+      }
+      function get_score(){
+        alert(total_score);
+      }
+      
+    </script>
+  </head>
+  <body>
+      <p>Author: Jake Nocera</p> <br>
+      <a href="mailto:jakenocera@gmail.com">Email</a> <br>
+      
+      <!--direction buttons-->
+      <input type="button" 
+             value="North" 
+             onclick= move_north();><br>
+      <input type="button" 
+             value="West" 
+             onclick= move_west();>
+      <input type="button" 
+             value="East" 
+             onclick= move_east();><br>
+      <input type="button" 
+             value="South" 
+             onclick= move_south();> <br>
+      <input type="button" 
+             value="Check Score" 
+             onclick= get_score();> <br>
+      <form>
+      <textarea cols="70" rows="5" name="text_area1">Welcome to "GAME NAME".
+      </textarea>
+      </form>
+  </body>
+ </html>
